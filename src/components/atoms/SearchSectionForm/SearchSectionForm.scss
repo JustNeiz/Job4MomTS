@@ -1,0 +1,19 @@
+@use '/Users/justneiz/WebstormProjects/Job4MomTS/src/styles/mixins.scss' as mixins;
+@use '/Users/justneiz/WebstormProjects/Job4MomTS/src/styles/variables.scss' as variables;
+.searchSectionForm{
+  display: flex;
+  flex-direction: row;
+  font-size: 18px;
+  width: 70%;
+  justify-content: space-between;
+  margin-bottom: 30px;
+&__input{
+  @include mixins.border-button;
+  padding: 15px;
+  width: 70%;
+  ::placeholder{
+    font-size: 18px;
+    color: variables.$color-text-grey;
+  }
+}
+}

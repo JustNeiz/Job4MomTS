@@ -1,0 +1,11 @@
+@use '/Users/justneiz/WebstormProjects/Job4MomTS/src/styles/variables.scss' as variables;
+.blackButton{
+  background-color: variables.$color-button-black;
+  border-radius: 10px;
+  color: white;
+  width: 187px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}

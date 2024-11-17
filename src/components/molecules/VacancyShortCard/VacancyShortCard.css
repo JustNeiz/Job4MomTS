@@ -1,0 +1,59 @@
+.vacancyShortCard {
+  width: 90%;
+  border-radius: 12px;
+  border-bottom: 4px solid black;
+  border-top: 1px solid black;
+  border-left: 1px solid black;
+  border-right: 4px solid black;
+  padding: 30px;
+  margin-bottom: 40px;
+  height: min-content;
+}
+.vacancyShortCard__header {
+  display: flex;
+  justify-content: space-between;
+}
+.vacancyShortCard__body > * {
+  padding: 10px 0;
+}
+.vacancyShortCard__body--salary {
+  font-weight: 900;
+}
+.vacancyShortCard__body--info {
+  display: flex;
+  justify-content: space-between;
+  font-family: "Mulish", sans-serif;
+  font-weight: 400;
+  font-size: 20px;
+}
+.vacancyShortCard__body--desc {
+  font-family: "Mulish", sans-serif;
+  font-weight: 400;
+  font-size: 20px;
+}
+.vacancyShortCard__footer {
+  display: flex;
+  justify-content: space-between;
+}
+.vacancyShortCard__footer--text {
+  color: #818181;
+}
+.vacancyShortCard__footer--apply {
+  display: grid;
+  grid-template-columns: 1fr 1.5fr;
+  align-items: center;
+  gap: 20px;
+}
+.vacancyShortCard__footer--saveButton {
+  cursor: pointer;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+}
+.vacancyShortCard__footer--saveButton:hover {
+  background-color: #D7D7D9;
+}
+
+/*# sourceMappingURL=VacancyShortCard.css.map */

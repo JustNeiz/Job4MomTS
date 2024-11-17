@@ -1,0 +1,22 @@
+.searchAutocomplete__wrapper {
+  height: 60px;
+}
+.searchAutocomplete__input {
+  border-radius: 12px;
+  border-bottom: 2px solid black;
+  border-top: 1px solid black;
+  border-left: 1px solid black;
+  border-right: 2px solid black;
+  height: 100%;
+}
+.searchAutocomplete__input::placeholder {
+  color: #818181;
+  font-family: "Mulish", sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+}
+.searchAutocomplete__icon {
+  padding-right: 20px;
+}
+
+/*# sourceMappingURL=SearchAutocomplete.css.map */

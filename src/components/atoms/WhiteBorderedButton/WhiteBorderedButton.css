@@ -1,0 +1,14 @@
+.whiteBorderedButton {
+  border: 1px solid black;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px 25px;
+  cursor: pointer;
+}
+.whiteBorderedButton__icon {
+  padding-left: 5px;
+}
+
+/*# sourceMappingURL=WhiteBorderedButton.css.map */

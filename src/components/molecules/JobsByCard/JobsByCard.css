@@ -1,0 +1,28 @@
+.jobsByCard {
+  width: 300px;
+  min-height: 348px;
+  display: flex;
+  flex-direction: column;
+}
+.jobsByCard * {
+  padding: 5px 0;
+}
+.jobsByCard__title {
+  text-align: center;
+}
+.jobsByCard__vacancy :nth-child(2) {
+  color: #818181;
+}
+.jobsByCard__vacancy :nth-child(1) {
+  width: 200px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.jobsByCard__expand {
+  align-self: flex-end;
+  width: 32px;
+  cursor: pointer;
+}
+
+/*# sourceMappingURL=JobsByCard.css.map */

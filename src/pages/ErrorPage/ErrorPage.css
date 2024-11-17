@@ -1,0 +1,10 @@
+.errorPage {
+  display: grid;
+  grid-template-columns: max-content min-content;
+  gap: 200px;
+}
+.errorPage__text--link {
+  font-size: 28px;
+}
+
+/*# sourceMappingURL=ErrorPage.css.map */

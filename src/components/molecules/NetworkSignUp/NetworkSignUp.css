@@ -1,0 +1,13 @@
+.networkSignUp {
+  display: flex;
+  width: 50%;
+  justify-content: space-between;
+}
+.networkSignUp__link--container {
+  display: flex;
+}
+.networkSignUp__link--container a {
+  text-decoration: underline;
+}
+
+/*# sourceMappingURL=NetworkSignUp.css.map */

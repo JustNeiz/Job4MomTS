@@ -1,0 +1,11 @@
+.networkLogin{
+  display: flex;
+  flex-direction: column;
+  >:nth-child(1){
+    margin-bottom: 20px;
+  }
+  &__button{
+    height: 60px;
+  }
+
+}

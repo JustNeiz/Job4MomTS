@@ -1,0 +1,23 @@
+.searchSectionForm {
+  display: flex;
+  flex-direction: row;
+  font-size: 18px;
+  width: 70%;
+  justify-content: space-between;
+  margin-bottom: 30px;
+}
+.searchSectionForm__input {
+  border-radius: 12px;
+  border-bottom: 2px solid black;
+  border-top: 1px solid black;
+  border-left: 1px solid black;
+  border-right: 2px solid black;
+  padding: 15px;
+  width: 70%;
+}
+.searchSectionForm__input ::placeholder {
+  font-size: 18px;
+  color: #818181;
+}
+
+/*# sourceMappingURL=SearchSectionForm.css.map */

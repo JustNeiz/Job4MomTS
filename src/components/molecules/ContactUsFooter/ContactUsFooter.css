@@ -1,0 +1,20 @@
+.contactUsFooter {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+.contactUsFooter__container {
+  display: flex;
+  width: 40%;
+  justify-content: space-between;
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+.contactUsFooter__container--text {
+  font-size: 24px;
+  color: white;
+}
+
+/*# sourceMappingURL=ContactUsFooter.css.map */

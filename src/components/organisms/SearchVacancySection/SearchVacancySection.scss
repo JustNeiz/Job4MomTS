@@ -1,0 +1,8 @@
+@use "/Users/justneiz/WebstormProjects/Job4MomTS/src/styles/mixins.scss" as mixins;
+.searchVacancySection{
+  width: 100%;
+  @include mixins.paddingY-main-content-30px;
+  &__title{
+    @include mixins.paddingY-sub-content-20px
+  }
+}

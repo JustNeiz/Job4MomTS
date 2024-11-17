@@ -1,0 +1,11 @@
+.linkWithIcon {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 16px;
+}
+.linkWithIcon__icon {
+  padding: 0 5px;
+}
+
+/*# sourceMappingURL=LinkWithIcon.css.map */

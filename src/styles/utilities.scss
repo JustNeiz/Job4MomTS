@@ -1,0 +1,11 @@
+@use "./variables.scss" as *;
+
+.uppercase {
+  text-transform: uppercase;
+}
+
+.link-dropdown {
+  padding: 10px;
+  cursor: pointer;
+}
+

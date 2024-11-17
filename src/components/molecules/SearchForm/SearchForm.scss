@@ -1,0 +1,8 @@
+@use '/Users/justneiz/WebstormProjects/Job4MomTS/src/styles/mixins.scss' as mixins;
+.searchForm{
+  display: flex;
+  justify-content: space-between;
+  width: 77%;
+  @include mixins.paddingY-sub-content-20px;
+
+}

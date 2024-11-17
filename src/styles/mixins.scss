@@ -1,0 +1,65 @@
+// text
+
+@mixin text-logo {
+  font-family: "Inter", sans-serif;
+  font-size: 30px;
+  font-weight: 400;
+}
+
+@mixin text-base {
+  font-family: "Mulish", sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+}
+@mixin text-thin {
+  font-family: "Mulish", sans-serif;
+  font-weight: 400;
+}
+@mixin text-h6-text{
+  font-family: "Mulish", sans-serif;
+  font-weight: 400;
+  font-size: 20px;
+}
+
+@mixin title-style($font-family, $font-size, $font-weight, $line-height) {
+  font-family: #{$font-family}, sans-serif;
+  font-size: $font-size;
+  font-weight: $font-weight;
+  line-height: $line-height;
+}
+
+@mixin flex-center {
+  display: flex;
+  align-items: center;
+}
+
+// border
+@mixin border-button {
+    border-radius: 12px;
+  border-bottom: 2px solid black;
+  border-top: 1px solid black;
+  border-left: 1px solid black;
+  border-right: 2px solid black;
+}
+@mixin border-vacancy-card {
+    border-radius: 12px;
+  border-bottom: 4px solid black;
+  border-top: 1px solid black;
+  border-left: 1px solid black;
+  border-right: 4px solid black;
+}
+
+//padding
+@mixin paddingX-main-content-80px{
+  padding-left:  80px;
+  padding-right:  80px;
+}
+@mixin paddingY-main-content-30px{
+  padding-top:  30px;
+  padding-bottom:  30px;
+}
+@mixin paddingY-sub-content-20px{
+  padding-top:  20px;
+  padding-bottom:  20px;
+}
+

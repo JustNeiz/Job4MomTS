@@ -1,0 +1,13 @@
+.benefitWithIcon {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.benefitWithIcon__icon {
+  width: 72px;
+  height: 72px;
+  margin-bottom: 30px;
+}
+
+/*# sourceMappingURL=BenefitWithIcon.css.map */

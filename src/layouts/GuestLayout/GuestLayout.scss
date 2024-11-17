@@ -1,0 +1,7 @@
+@use '/Users/justneiz/WebstormProjects/Job4MomTS/src/styles/mixins.scss' as mixins;
+.guestLayout {
+  width: 100vw;
+  >:nth-child(2){
+  @include mixins.paddingX-main-content-80px;
+  }
+}

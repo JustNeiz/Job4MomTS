@@ -1,0 +1,4 @@
+@use '/Users/justneiz/WebstormProjects/Job4MomTS/src/styles/mixins.scss' as mixins;
+.sectionTitle {
+  @include mixins.paddingY-main-content-30px;
+}

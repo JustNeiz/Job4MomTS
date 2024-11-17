@@ -1,0 +1,13 @@
+@use '/Users/justneiz/WebstormProjects/Job4MomTS/src/styles/mixins.scss' as mixins;
+@use '/Users/justneiz/WebstormProjects/Job4MomTS/src/styles/variables.scss' as variables;
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  width: 100%;
+  margin-bottom: 20px;
+  border-bottom: 1px variables.$color-card-grey-3 solid;
+  @include mixins.paddingX-main-content-80px;
+  @include mixins.paddingY-sub-content-20px;
+
+}

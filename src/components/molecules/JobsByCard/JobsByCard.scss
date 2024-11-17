@@ -1,0 +1,32 @@
+@use '/Users/justneiz/WebstormProjects/Job4MomTS/src/styles/variables.scss' as variables;
+.jobsByCard {
+  width: 300px;
+  min-height: 348px;
+  display: flex;
+  flex-direction: column;
+  *{
+    padding: 5px 0;
+  }
+
+  &__title{
+    text-align: center;
+  }
+
+  &__vacancy{
+    :nth-child(2){
+      color: variables.$color-text-grey;
+    }
+    :nth-child(1){
+      width: 200px;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
+  }
+
+  &__expand{
+    align-self: flex-end;
+    width: 32px;
+    cursor: pointer;
+  }
+}

@@ -1,0 +1,21 @@
+@use '/Users/justneiz/WebstormProjects/Job4MomTS/src/styles/variables.scss' as variables;
+.languagePicker {
+  width: fit-content;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border: none;
+  transition: background-color 150ms ease;
+  border-radius: 10px;
+  &__text{
+    font-weight: 500;
+    font-size: 20px;
+  }
+  &__icon{
+    padding-left: 5px;
+  }
+  &__dropdown{
+    width: fit-content;
+
+  }
+}

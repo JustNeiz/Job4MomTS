@@ -1,0 +1,21 @@
+@use "/Users/justneiz/WebstormProjects/Job4MomTS/src/styles/mixins.scss" as mixins;
+@use "/Users/justneiz/WebstormProjects/Job4MomTS/src/styles/variables.scss" as variables;
+
+.searchAutocomplete {
+  &__wrapper {
+    height: 60px;
+  }
+  &__input{
+    @include mixins.border-button;
+    height: 100%;
+
+    &::placeholder{
+      color: variables.$color-text-grey;
+      @include mixins.text-thin;
+      font-size: 18px;
+    }
+  }
+  &__icon{
+    padding-right: 20px;
+  }
+}

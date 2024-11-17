@@ -1,0 +1,12 @@
+.whiteBorderedButton {
+  border: 1px solid black;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px 25px;
+  cursor: pointer;
+  &__icon{
+    padding-left: 5px;
+  }
+}

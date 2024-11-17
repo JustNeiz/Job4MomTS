@@ -1,0 +1,9 @@
+.searchForm {
+  display: flex;
+  justify-content: space-between;
+  width: 77%;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+/*# sourceMappingURL=SearchForm.css.map */

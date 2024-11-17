@@ -1,0 +1,33 @@
+@use '/Users/justneiz/WebstormProjects/Job4MomTS/src/styles/variables.scss' as variables;
+
+.cookies-modal {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 45px 0 35px 0;
+  box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.1);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 100;
+  gap: 36px;
+  background-color: variables.$color-card-grey-3;
+  
+
+  &__text {
+    color: #414040;
+  ;
+  }
+
+  &__button {
+    border: none;
+    border-radius: 6px;
+    padding: 3px 20px;
+    cursor: pointer;
+
+    &:hover {
+      background-color: variables.$color-card-grey-4;
+    }
+  }
+}

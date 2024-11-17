@@ -1,0 +1,56 @@
+@use '/Users/justneiz/WebstormProjects/Job4MomTS/src/styles/mixins.scss' as mixins;
+@use '/Users/justneiz/WebstormProjects/Job4MomTS/src/styles/variables.scss' as variables;
+.vacancyShortCard{
+  width: 90%;
+  @include mixins.border-vacancy-card;
+  padding: 30px;
+  margin-bottom: 40px;
+  height: min-content;
+  &__header{
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__body{
+    >*{
+      padding: 10px 0;
+    }
+    &--salary{
+      font-weight: 900;
+    }
+    &--info{
+      display: flex;
+      justify-content: space-between;
+      @include mixins.text-h6-text;
+    }
+    &--desc{
+      @include mixins.text-h6-text
+    }
+  }
+
+  &__footer{
+    display: flex;
+    justify-content: space-between;
+    &--text{
+      color: variables.$color-text-grey;
+    }
+    &--apply{
+      display: grid;
+      grid-template-columns: 1fr 1.5fr;
+      align-items: center;
+      gap: 20px;
+
+    }
+    &--saveButton{
+      cursor: pointer;
+      border-radius: 10px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 100%;
+      &:hover{
+        background-color: variables.$color-card-grey-4;
+      }
+    }
+  }
+}

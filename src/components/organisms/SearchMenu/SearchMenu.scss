@@ -1,0 +1,11 @@
+@use "/src/styles/mixins";
+.searchMenu{
+  width: 100%;
+  @include mixins.paddingY-sub-content-20px;
+  display: flex;
+  flex-direction: column;
+  &__popularRequests{
+    display: flex;
+    flex-direction: row;
+  }
+}

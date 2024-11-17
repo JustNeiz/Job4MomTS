@@ -1,0 +1,12 @@
+.blackButton {
+  background-color: #16161F;
+  border-radius: 10px;
+  color: white;
+  width: 187px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+/*# sourceMappingURL=BlackButton.css.map */

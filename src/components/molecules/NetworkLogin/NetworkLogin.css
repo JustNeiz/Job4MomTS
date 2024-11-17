@@ -1,0 +1,12 @@
+.networkLogin {
+  display: flex;
+  flex-direction: column;
+}
+.networkLogin > :nth-child(1) {
+  margin-bottom: 20px;
+}
+.networkLogin__button {
+  height: 60px;
+}
+
+/*# sourceMappingURL=NetworkLogin.css.map */

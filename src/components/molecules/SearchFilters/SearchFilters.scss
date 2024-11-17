@@ -1,0 +1,22 @@
+.searchFilters{
+  width: 20%;
+  &__filter{
+    border: none;
+    &--label{
+      font-size: 16px;
+    }
+    &--content{
+      font-size: 20px;
+      font-weight: 600;
+    }
+  }
+  &__title{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    &--icon{
+      width: 36px;
+      height: 20px;
+    }
+  }
+}

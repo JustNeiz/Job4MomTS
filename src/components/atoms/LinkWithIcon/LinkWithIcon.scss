@@ -1,0 +1,9 @@
+.linkWithIcon {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 16px;
+  &__icon{
+    padding: 0 5px;
+  }
+}

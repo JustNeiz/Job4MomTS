@@ -1,0 +1,11 @@
+@use '/Users/justneiz/WebstormProjects/Job4MomTS/src/styles/mixins.scss' as mixins;
+@use '/Users/justneiz/WebstormProjects/Job4MomTS/src/styles/variables.scss' as variables;
+.loginPage{
+  display: flex;
+  flex-direction: column;
+  &__subtitle{
+    position: relative;
+    bottom: 20px;
+    color: variables.$color-text-grey;
+  }
+}

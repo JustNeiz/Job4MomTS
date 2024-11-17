@@ -1,0 +1,11 @@
+.loginPage {
+  display: flex;
+  flex-direction: column;
+}
+.loginPage__subtitle {
+  position: relative;
+  bottom: 20px;
+  color: #818181;
+}
+
+/*# sourceMappingURL=LoginPage.css.map */

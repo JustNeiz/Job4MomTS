@@ -1,0 +1,12 @@
+.copyrights {
+  display: flex;
+  justify-content: space-between;
+  width: 300px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+.copyrights__text {
+  color: white;
+}
+
+/*# sourceMappingURL=Copyrights.css.map */

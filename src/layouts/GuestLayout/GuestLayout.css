@@ -1,0 +1,9 @@
+.guestLayout {
+  width: 100vw;
+}
+.guestLayout > :nth-child(2) {
+  padding-left: 80px;
+  padding-right: 80px;
+}
+
+/*# sourceMappingURL=GuestLayout.css.map */

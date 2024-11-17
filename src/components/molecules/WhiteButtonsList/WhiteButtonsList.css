@@ -1,0 +1,12 @@
+.popularRequestsList {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 100%;
+}
+.popularRequestsList > * {
+  margin: 0 10px 10px 0;
+}
+
+/*# sourceMappingURL=WhiteButtonsList.css.map */

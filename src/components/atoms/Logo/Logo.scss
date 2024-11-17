@@ -1,0 +1,12 @@
+@use "src/styles/variables" as variables;
+@use "/Users/justneiz/WebstormProjects/Job4MomTS/src/styles/mixins.scss" as mixins;
+
+.logo {
+    text-align: center;
+    text-decoration: none;
+    @include mixins.text-logo;
+    width: 140px;
+    &:hover {
+      text-decoration: none;
+    }
+}

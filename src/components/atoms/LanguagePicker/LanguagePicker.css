@@ -1,0 +1,21 @@
+.languagePicker {
+  width: fit-content;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border: none;
+  transition: background-color 150ms ease;
+  border-radius: 10px;
+}
+.languagePicker__text {
+  font-weight: 500;
+  font-size: 20px;
+}
+.languagePicker__icon {
+  padding-left: 5px;
+}
+.languagePicker__dropdown {
+  width: fit-content;
+}
+
+/*# sourceMappingURL=LanguagePicker.css.map */

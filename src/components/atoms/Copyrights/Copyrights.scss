@@ -1,0 +1,10 @@
+@use '/Users/justneiz/WebstormProjects/Job4MomTS/src/styles/mixins.scss' as mixins;
+.copyrights{
+  display: flex;
+  justify-content: space-between;
+  width: 300px;
+  @include mixins.paddingY-sub-content-20px;
+  &__text{
+    color: white;
+  }
+}

@@ -1,0 +1,115 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Mulish", sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 1.33;
+  margin: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+}
+
+h1 {
+  font-size: 52px;
+  font-weight: 700;
+}
+
+h2 {
+  font-size: 42px;
+}
+
+h3 {
+  font-size: 36px;
+  font-weight: 400;
+}
+
+h4 {
+  font-size: 32px;
+  font-weight: 500;
+}
+
+h5 {
+  font-size: 28px;
+  font-weight: 500;
+}
+
+a {
+  display: inline-block;
+  color: #16161f;
+  text-decoration: none;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+.link {
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.link:hover {
+  color: var(--color-link-hover);
+  text-decoration: underline;
+}
+
+.tips {
+  background: var(--color-tips-norval);
+}
+
+.tips:hover {
+  background: var(--color-tips-hover);
+}
+
+.container {
+  width: 100%;
+  max-width: 1368px;
+  margin: 0 auto;
+  padding: 0 24px;
+}
+
+.text-uppercase {
+  text-transform: uppercase;
+}
+
+.link-dropdown {
+  padding: 10px;
+  cursor: pointer;
+}
+
+.link-dropdown:hover {
+  background-color: var(--color-card-normal);
+}
+
+.logo {
+  width: 140px;
+}
+
+.logo-text {
+  text-align: center;
+  font-family: "Inter", sans-serif;
+  font-size: 30px;
+  font-weight: 400;
+  text-decoration: none;
+}
+
+/*# sourceMappingURL=global.css.map */

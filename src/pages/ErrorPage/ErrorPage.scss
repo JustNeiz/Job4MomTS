@@ -1,0 +1,10 @@
+.errorPage{
+  display: grid;
+  grid-template-columns: max-content min-content;
+  gap: 200px;
+  &__text{
+    &--link{
+      font-size: 28px;
+    }
+  }
+}

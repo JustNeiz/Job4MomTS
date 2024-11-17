@@ -1,0 +1,21 @@
+@use '/Users/justneiz/WebstormProjects/Job4MomTS/src/styles/mixins.scss' as mixins;
+.contactUsFooter{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+ &__container{
+   display: flex;
+   width: 40%;
+   justify-content: space-between;
+
+
+
+   @include mixins.paddingY-main-content-30px;
+   &--text{
+     font-size: 24px;
+     color: white;
+   }
+ }
+}

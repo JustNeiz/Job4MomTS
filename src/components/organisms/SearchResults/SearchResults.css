@@ -1,0 +1,14 @@
+.searchResults {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+.searchResults__cards {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+/*# sourceMappingURL=SearchResults.css.map */

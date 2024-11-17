@@ -1,0 +1,6 @@
+@use '/src/styles/mixins' as mixins;
+.benefits{
+  display: flex;
+  justify-content: space-between;
+  @include mixins.paddingY-main-content-30px
+}

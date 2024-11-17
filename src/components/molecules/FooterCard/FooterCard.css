@@ -1,0 +1,18 @@
+.footerCard {
+  color: white;
+  display: flex;
+  flex-direction: column;
+}
+.footerCard * {
+  color: white;
+}
+.footerCard__link {
+  padding: 15px 0;
+  font-size: 24px;
+}
+.footerCard__title {
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+/*# sourceMappingURL=FooterCard.css.map */
