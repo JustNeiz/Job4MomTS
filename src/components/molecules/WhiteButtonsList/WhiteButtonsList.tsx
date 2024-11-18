@@ -1,9 +1,11 @@
 import "./WhiteButtonsList.scss";
 import WhiteBorderedButton from "../../atoms/WhiteBorderedButton/WhiteBorderedButton.tsx";
-const WhiteButtonsList = ({ array }) => {
+import React from "react";
+import { IWhiteButtonsList } from "../../../interfaces/propsInterfaces/IWhiteButtonsList.ts";
+const WhiteButtonsList: React.FC<IWhiteButtonsList> = ({ contentArray }) => {
   return (
     <div className={"popularRequestsList"}>
-      {array.map((item) => (
+      {contentArray.map((item) => (
         <WhiteBorderedButton>{item}</WhiteBorderedButton>
       ))}
     </div>

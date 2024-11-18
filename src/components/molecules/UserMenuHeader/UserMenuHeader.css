@@ -5,6 +5,12 @@
   justify-items: end;
   align-items: end;
 }
+.userMenuHeader__employers {
+  font-size: 20px;
+}
+.userMenuHeader__button {
+  width: 200px;
+}
 .userMenuHeader__link * {
   padding-left: 5px;
 }

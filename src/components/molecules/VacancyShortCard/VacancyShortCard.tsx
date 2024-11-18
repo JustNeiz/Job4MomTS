@@ -1,20 +1,9 @@
 import "./VacancyShortCard.scss";
 import WhiteButtonsList from "../WhiteButtonsList/WhiteButtonsList.tsx";
-import LinkWithIcon from "../../atoms/LinkWithIcon/LinkWithIcon.tsx";
 import BlackButton from "../../atoms/BlackButton/BlackButton.tsx";
-const VacancyShortCard = ({ vacancy }) => {
-  // {
-  //     vacancy_title: "Graphic Designer",
-  //         vacancy_salary: "$45,000 - $60,000",
-  //     company_name: "VisualArts",
-  //     company_logo: "https://example.com/logo10.png",
-  //     vacancy_jobType: "Part-time",
-  //     vacancy_languagesRequire: ["English", "Italian"],
-  //     vacancy_description:
-  //     "Design compelling visuals for marketing and branding projects.",
-  //         vacancy_skillsRequire: ["Photoshop", "Illustrator", "Creativity"],
-  //     vacancy_postedDate: "2024-11-03",
-  // }
+import { IVacancyProps } from "../../../interfaces/propsInterfaces/IVacancyProps.ts";
+import React from "react";
+const VacancyShortCard: React.FC<IVacancyProps> = ({ vacancy }) => {
   const {
     vacancy_title,
     vacancy_salary,
@@ -26,6 +15,7 @@ const VacancyShortCard = ({ vacancy }) => {
     vacancy_postedDate,
     vacancy_skillsRequire,
   } = vacancy;
+
   return (
     <div className={"vacancyShortCard"}>
       <div className={"vacancyShortCard__header"}>
@@ -46,7 +36,7 @@ const VacancyShortCard = ({ vacancy }) => {
           {vacancy_description}
         </h6>
 
-        <WhiteButtonsList array={vacancy_skillsRequire} />
+        <WhiteButtonsList contentArray={vacancy_skillsRequire} />
       </div>
 
       <div className={"vacancyShortCard__footer"}>
@@ -58,7 +48,9 @@ const VacancyShortCard = ({ vacancy }) => {
             <img src={"src/assets/heart.png"} alt={"heart"} />
             <span>Save</span>
           </div>
-          <BlackButton height={"40px"}>Apply</BlackButton>
+          <BlackButton className={"vacancyShortCard__footer--applyButton"}>
+            Apply
+          </BlackButton>
         </div>
       </div>
     </div>

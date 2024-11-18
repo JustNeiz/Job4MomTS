@@ -1,7 +1,9 @@
 import "./CheckboxCustom.scss";
-import { Checkbox } from "@mantine/core";
-const CheckboxCustom = ({ label }) => {
-  const checkboxIcon = ({ indeterminate, ...others }) =>
+import { Checkbox, CheckboxProps } from "@mantine/core";
+import { ICheckBoxCustom } from "../../../interfaces/propsInterfaces/ICheckBoxCustom.ts";
+import React from "react";
+const CheckboxCustom: React.FC<ICheckBoxCustom> = ({ label }) => {
+  const checkboxIcon: CheckboxProps["icon"] = ({ indeterminate, ...others }) =>
     indeterminate ? (
       <img
         src={"src/assets/checkboxUnclicked.png"}

@@ -20,7 +20,7 @@ const SearchMenu = () => {
       <SearchForm />
       <div className={"searchMenu__popularRequests"}>
         <span>Popular requests: </span>
-        <WhiteButtonsList array={jobSearchQueries} />
+        <WhiteButtonsList contentArray={jobSearchQueries} />
       </div>
     </div>
   );

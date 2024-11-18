@@ -55,5 +55,8 @@
 .vacancyShortCard__footer--saveButton:hover {
   background-color: #D7D7D9;
 }
+.vacancyShortCard__footer--applyButton {
+  height: 40px;
+}
 
 /*# sourceMappingURL=VacancyShortCard.css.map */

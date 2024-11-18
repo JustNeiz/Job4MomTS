@@ -3,4 +3,7 @@
   grid-template-columns: 1fr 1fr 1fr;
   grid-column-gap: 70px;
   font-weight: 500;
+  &__logo{
+    color: white;
+  }
 }

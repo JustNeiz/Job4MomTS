@@ -15,11 +15,10 @@
     "jsx": "react-jsx",
 
     /* Linting */
-    "strict": false, //potom vernut
+    "strict": true,
     "noUnusedLocals": true,
     "noUnusedParameters": true,
     "noFallthroughCasesInSwitch": true,
-    "noImplicitAny": false // potom udalit
   },
   "include": ["src"],
   "references": [{ "path": "./tsconfig.node.json" }]

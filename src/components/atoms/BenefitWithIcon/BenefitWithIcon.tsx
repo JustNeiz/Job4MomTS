@@ -1,6 +1,8 @@
 import "./BenefitWithIcon.scss";
+import { IBenefitWithIcon } from "../../../interfaces/propsInterfaces/IBenefitWithIcon.ts";
+import React from "react";
 
-const BenefitWithIcon = ({ iconURL, label }) => {
+const BenefitWithIcon: React.FC<IBenefitWithIcon> = ({ iconURL, label }) => {
   return (
     <div className={"benefitWithIcon"}>
       <img

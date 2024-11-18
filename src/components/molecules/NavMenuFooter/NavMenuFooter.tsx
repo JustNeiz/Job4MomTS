@@ -10,7 +10,7 @@ const NavMenuFooter = () => {
   const forEmployers = [{ label: "Post a Job", href: "/" }];
   return (
     <div className={"navMenuHeader"}>
-      <Logo color={"white"} />
+      <Logo className={"navMenuHeader__logo"} />
       <FooterCard label={"JOBS FOR MOM"} cardContentArray={jobs} />
       <FooterCard label={"FOR EMPLOYERS"} cardContentArray={forEmployers} />
     </div>

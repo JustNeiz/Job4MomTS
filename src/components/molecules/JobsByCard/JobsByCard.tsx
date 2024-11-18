@@ -1,7 +1,9 @@
 import "./JobsByCard.scss";
 import LinkWithIcon from "../../atoms/LinkWithIcon/LinkWithIcon.tsx";
+import { IJobsByCard } from "../../../interfaces/propsInterfaces/IJobsByCard.ts";
+import React from "react";
 
-const JobsByCard = ({ title, vacancyArr }) => {
+const JobsByCard: React.FC<IJobsByCard> = ({ title, vacancyArr }) => {
   return (
     <div className={"jobsByCard"}>
       <h5 className={"jobsByCard__title"}>{title}</h5>
@@ -9,6 +11,7 @@ const JobsByCard = ({ title, vacancyArr }) => {
         <LinkWithIcon
           className={"jobsByCard__vacancy"}
           icon={`${item.vacancy_quantity} jobs`}
+          href={"/"}
         >
           {item.vacancy_name}
         </LinkWithIcon>
