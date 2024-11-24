@@ -1,0 +1,48 @@
+@use '/Users/justneiz/WebstormProjects/Job4MomTS/src/styles/mixins.scss' as mixins;
+@use '/Users/justneiz/WebstormProjects/Job4MomTS/src/styles/variables.scss' as variables;
+.personalDetailsForm{
+  display: flex;
+  flex-direction: column;
+  &__label{
+    @include mixins.label-medium-text;
+  }
+  &__input{
+    @include mixins.border-input-resume;
+    @include mixins.size-input-resume;
+    @include mixins.padding-input-resume;
+
+    font-size: 18px;
+    ::placeholder{
+      color: variables.$color-text-grey;
+    }
+  }
+  &__nameContainer{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    width: 100%;
+    grid-column-gap: 20px;
+    >*{
+      display: flex;
+      flex-direction: column;
+    }
+  }
+  &__positions{
+    >*{
+      padding: 10px 0;
+    }
+  }
+  &__socialMedia{
+
+      position: relative;
+
+    &--deleteButton{
+      width: 16px;
+      height: 18px;
+      background-image: url("src/assets/trashbox.png");
+      position: absolute;
+      right: -40px;
+      top: 50%;
+      transform: translateY(-50%);
+    }
+  }
+}

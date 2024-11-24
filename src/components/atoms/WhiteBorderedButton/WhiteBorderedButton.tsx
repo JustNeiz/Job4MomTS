@@ -1,22 +1,16 @@
 import "./WhiteBorderedButton.scss";
-import { useNavigate } from "react-router-dom";
 import { IWhiteBorderedButtonProps } from "../../../interfaces/propsInterfaces/IWhiteBorderedButton.ts";
 import React from "react";
 
 const WhiteBorderedButton: React.FC<IWhiteBorderedButtonProps> = ({
   children,
-  className,
+  className = "",
   rightSection,
   leftSection,
-  href,
+  onClick,
 }) => {
-  const navigate = useNavigate();
-
   return (
-    <div
-      className={`whiteBorderedButton ${className} `}
-      onClick={() => href && navigate(href)}
-    >
+    <div className={`whiteBorderedButton ${className} `} onClick={onClick}>
       {leftSection && leftSection}
       <span>{children}</span>
       {rightSection && rightSection}

@@ -6,4 +6,5 @@ export interface IWhiteBorderedButtonProps {
   rightSection?: string | React.ReactNode;
   leftSection?: string | React.ReactNode;
   href?: string;
+  onClick?: () => void;
 }

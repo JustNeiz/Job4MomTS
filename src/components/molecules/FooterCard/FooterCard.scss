@@ -1,11 +1,11 @@
 @use '/Users/justneiz/WebstormProjects/Job4MomTS/src/styles/mixins.scss' as mixins;
 .footerCard{
   color: white;
+  display: flex;
+  flex-direction: column;
   *{
     color: white;
   }
-  display: flex;
-  flex-direction: column;
   &__link{
     padding: 15px 0;
     font-size: 24px;

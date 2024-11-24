@@ -2,7 +2,7 @@
 .searchForm{
   display: flex;
   justify-content: space-between;
-  width: 77%;
+  width: 100%;
   @include mixins.paddingY-sub-content-20px;
 
 }

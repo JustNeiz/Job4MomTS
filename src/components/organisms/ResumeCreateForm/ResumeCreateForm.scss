@@ -1,0 +1,8 @@
+@use '/Users/justneiz/WebstormProjects/Job4MomTS/src/styles/mixins.scss' as mixins;
+.resumeCreateForm {
+  @include mixins.border-vacancy-card;
+  padding: 30px;
+  >*{
+  width: 70%;
+  }
+}

@@ -17,7 +17,7 @@ const UserMenuHeader = () => {
       </LinkWithIcon>
       <LinkWithIcon
         icon={<img src={"src/assets/arrowRIght.png"} alt={"rightArrow"} />}
-        href={"/main"}
+        href={"/resume_creation"}
       >
         Add Resume
       </LinkWithIcon>

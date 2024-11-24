@@ -1,3 +1,5 @@
+@use '/Users/justneiz/WebstormProjects/Job4MomTS/src/styles/variables.scss' as variables;
+
 // text
 
 @mixin text-logo {
@@ -33,6 +35,23 @@
   align-items: center;
 }
 
+@mixin label-medium-text{
+  font-size: 28px;
+  font-weight: 400;
+}
+
+
+@mixin input-placeholder-18px{
+  font-size: 18px;
+  font-weight: 400;
+  color: variables.$color-text-grey;
+}
+
+@mixin text-black-18px{
+  font-size: 18px;
+  font-weight: 400;
+}
+
 // border
 @mixin border-button {
     border-radius: 12px;
@@ -48,6 +67,10 @@
   border-left: 1px solid black;
   border-right: 4px solid black;
 }
+@mixin border-input-resume {
+  border-radius: 6px;
+  border: 1px solid black;
+}
 
 //padding
 @mixin paddingX-main-content-80px{
@@ -61,5 +84,14 @@
 @mixin paddingY-sub-content-20px{
   padding-top:  20px;
   padding-bottom:  20px;
+}
+@mixin padding-input-resume{
+  padding: 17px 24px;
+}
+
+//sizing
+@mixin size-input-resume{
+  width: 100%;
+  height: 60px;
 }
 

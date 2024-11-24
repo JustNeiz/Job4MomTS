@@ -1,20 +1,8 @@
 import "./SearchMenu.scss";
 import SearchForm from "../../molecules/SearchForm/SearchForm.tsx";
 import WhiteButtonsList from "../../molecules/WhiteButtonsList/WhiteButtonsList.tsx";
+import { jobSearchQueries } from "../../../Trash/fobSearchQueriesArray.ts";
 const SearchMenu = () => {
-  const jobSearchQueries = [
-    "job openings in New York",
-    "remote jobs",
-    "jobs for students",
-    "flexible work schedule jobs",
-    "IT job search",
-    "marketing jobs",
-    "entry-level job vacancies",
-    "bank job openings",
-    "jobs for women",
-    "social media jobs",
-    "high salary job vacancies",
-  ];
   return (
     <div className={"searchMenu"}>
       <SearchForm />

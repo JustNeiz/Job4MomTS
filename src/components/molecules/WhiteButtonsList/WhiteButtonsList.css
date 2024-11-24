@@ -2,11 +2,14 @@
   display: flex;
   align-items: center;
   flex-direction: row;
-  flex-wrap: wrap;
-  width: 100%;
+  overflow: auto;
+  height: min-content;
 }
 .popularRequestsList > * {
   margin: 0 10px 10px 0;
+}
+.popularRequestsList * {
+  width: max-content;
 }
 
 /*# sourceMappingURL=WhiteButtonsList.css.map */

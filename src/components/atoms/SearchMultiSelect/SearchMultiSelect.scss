@@ -1,0 +1,19 @@
+@use "/Users/justneiz/WebstormProjects/Job4MomTS/src/styles/mixins.scss" as mixins;
+@use "/Users/justneiz/WebstormProjects/Job4MomTS/src/styles/variables.scss" as variables;
+.searchMultiSelect{
+  &__wrapper{
+  @include mixins.border-input-resume;
+    @include mixins.size-input-resume;
+    @include mixins.padding-input-resume;
+    height: min-content;
+    font-size: 18px;
+    font-weight: 400;
+    ::placeholder{
+      color: variables.$color-text-grey;
+    }
+
+  }
+  &__pillList{
+    height: 100%;
+  }
+}

@@ -4,6 +4,7 @@ import MainPage from "./pages/MainPage/MainPage.tsx";
 import LoginPage from "./pages/LoginPage/LoginPage.tsx";
 import ErrorPage from "./pages/ErrorPage/ErrorPage.tsx";
 import SearchResultsPage from "./pages/SearchResultsPage/SearchResultsPage.tsx";
+import ResumeCreationPage from "./pages/ResumeCreationPage/ResumeCreationPage.tsx";
 
 export const router = createBrowserRouter([
   {
@@ -29,6 +30,10 @@ export const router = createBrowserRouter([
       {
         path: "/results",
         element: <SearchResultsPage />,
+      },
+      {
+        path: "/resume_creation",
+        element: <ResumeCreationPage />,
       },
     ],
   },

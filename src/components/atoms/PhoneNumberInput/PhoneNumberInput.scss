@@ -1,0 +1,46 @@
+@use '/Users/justneiz/WebstormProjects/Job4MomTS/src/styles/mixins.scss' as mixins;
+.phoneNumberInput {
+  display: flex;
+  justify-content: space-between;
+
+  &__input{
+    @include mixins.border-input-resume;
+    @include mixins.size-input-resume;
+    @include mixins.text-black-18px;
+    @include mixins.padding-input-resume;
+    width: 80%;
+    ::placeholder{
+      @include mixins.input-placeholder-18px;
+    }
+  }
+
+  &__picker {
+    &--input {
+      @include mixins.text-black-18px;
+      border: none;
+      display: flex;
+      justify-content: space-around;
+    }
+
+  &--wrapper {
+    @include mixins.border-input-resume;
+    @include mixins.size-input-resume;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+
+
+  &--dropDownOption {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-items: center;
+    align-items: center;
+
+    &--dropDownFlag {
+      height: 24px;
+      width: 32px;
+    }
+  }
+  }
+}

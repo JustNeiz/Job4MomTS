@@ -1,6 +1,6 @@
 @use "/src/styles/mixins";
 .searchMenu{
-  width: 100%;
+  width: 80%;
   @include mixins.paddingY-sub-content-20px;
   display: flex;
   flex-direction: column;
