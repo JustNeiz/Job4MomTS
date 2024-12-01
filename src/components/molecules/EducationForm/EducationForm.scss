@@ -1,3 +1,21 @@
+@use '/Users/justneiz/WebstormProjects/Job4MomTS/src/styles/mixins.scss' as mixins;
 .educationForm{
-
+  @include mixins.paddingY-main-content-30px;
+  &__radio {
+    * {
+      margin-bottom: 2px;
+    }
+  }
+  &__textArea{
+    @include mixins.paddingY-main-content-30px;
+    &--area{
+    @include mixins.border-button;
+    @include mixins.padding-input-resume;
+    min-width: 70%;
+    min-height: 150px;
+    }
+  }
+  &__radio--icon{
+    background-color: #16161F;
+  }
 }

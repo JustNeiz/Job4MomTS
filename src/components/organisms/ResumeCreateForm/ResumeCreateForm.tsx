@@ -6,6 +6,7 @@ import WorkExperienceForm from "../../molecules/WorkExperienceForm/WorkExperienc
 import KnowledgeAndSkillsForm from "../../molecules/KnowledgeAndSkillsForm/KnowledgeAndSkillsForm.tsx";
 import EducationForm from "../../molecules/EducationForm/EducationForm.tsx";
 import "./ResumeCreateForm.scss";
+import ResidenceSection from "../../molecules/ResidenceSection/ResidenceSection.tsx";
 
 const initialValues: ResumeFormValues = {
   firstName: "",
@@ -48,10 +49,16 @@ const ResumeForm = () => {
         {() => (
           <Form>
             <PersonalDetailsForm />
+            <ResidenceSection />
             <WorkExperienceForm />
             <KnowledgeAndSkillsForm />
             <EducationForm />
-            <button type="submit">Create Resume</button>
+            <button
+              type="submit"
+              className={"blackButton resumeCreateForm__submit"}
+            >
+              Create Resume
+            </button>
           </Form>
         )}
       </Formik>

@@ -43,38 +43,47 @@ const PhoneNumberInput = () => {
   };
 
   return (
-    <div className={"phoneNumberInput"}>
-      <Autocomplete
-        data={Object.keys(phoneCodes)}
-        maxDropdownHeight={200}
-        defaultValue={"US"}
-        renderOption={renderOption}
-        value={autoCompleteValue}
-        onChange={(value) => setAutocompleteValue(value as keyof typeof flags)}
-        w={"15%"}
-        leftSection={
-          <img
-            src={
-              flags[autoCompleteValue] ? flags[autoCompleteValue] : flags["US"]
-            }
-            alt={"flag"}
-            className={"phoneNumberInput__picker--dropDownOption--dropDownFlag"}
-          />
-        }
-        classNames={{
-          input: "phoneNumberInput__picker--input",
-          wrapper: "phoneNumberInput__picker--wrapper",
-          section: "phoneNumberInput__picker--section",
-        }}
-      />
-      <Field
-        name="phone"
-        type="text"
-        className={"phoneNumberInput__input"}
-        placeholder={"Phone Number"}
-        onChange={handleChange}
-      />
-      {errors.phone && touched.phone && <div>{errors.phone}</div>}
+    <div>
+      <h5>Phone number*</h5>
+      <div className={"phoneNumberInput"}>
+        <Autocomplete
+          data={Object.keys(phoneCodes)}
+          maxDropdownHeight={200}
+          defaultValue={"US"}
+          renderOption={renderOption}
+          value={autoCompleteValue}
+          onChange={(value) =>
+            setAutocompleteValue(value as keyof typeof flags)
+          }
+          w={"15%"}
+          leftSection={
+            <img
+              src={
+                flags[autoCompleteValue]
+                  ? flags[autoCompleteValue]
+                  : flags["US"]
+              }
+              alt={"flag"}
+              className={
+                "phoneNumberInput__picker--dropDownOption--dropDownFlag"
+              }
+            />
+          }
+          classNames={{
+            input: "phoneNumberInput__picker--input",
+            wrapper: "phoneNumberInput__picker--wrapper",
+            section: "phoneNumberInput__picker--section",
+          }}
+        />
+        <Field
+          name="phone"
+          type="text"
+          className={"phoneNumberInput__input"}
+          placeholder={"Phone Number"}
+          onChange={handleChange}
+        />
+        {errors.phone && touched.phone && <div>{errors.phone}</div>}
+      </div>
     </div>
   );
 };

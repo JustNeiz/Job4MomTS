@@ -2,6 +2,7 @@
 .phoneNumberInput {
   display: flex;
   justify-content: space-between;
+  @include mixins.paddingY-main-content-30px;
 
   &__input{
     @include mixins.border-input-resume;

@@ -1,0 +1,52 @@
+@use '/Users/justneiz/WebstormProjects/Job4MomTS/src/styles/mixins.scss' as mixins;
+.experienceForm{
+  display: flex;
+  flex-direction: column;
+  @include mixins.paddingY-main-content-30px;
+  &__form{
+    >*{
+      @include mixins.paddingY-sub-content-20px;
+    }
+  }
+  &__label{
+    @include mixins.label-medium-text;
+    @include mixins.paddingY-sub-content-10px;
+  }
+  &__input{
+  position: relative;
+    *{
+      @include mixins.paddingY-sub-content-10px;
+    }
+    &--label{
+      @include mixins.text-black-18px;
+    }
+    &--datePicker{
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      width: 40%;
+      min-width: 300px;
+      padding: 0;
+
+    }
+    &--datePickerContainer{
+      display: flex;
+      width: 80%;
+      justify-content: space-between;
+      align-items: center;
+      padding: 0;
+    }
+  }
+  &__deleteButton{
+    width: 16px;
+    height: 18px;
+    background-image: url("src/assets/trashbox.png");
+    position: absolute;
+    right: -40px;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+  &__addButton{
+    cursor: pointer;
+    text-decoration: underline;
+  }
+}

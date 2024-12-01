@@ -1,0 +1,24 @@
+@use '/Users/justneiz/WebstormProjects/Job4MomTS/src/styles/mixins.scss' as mixins;
+.salaryExpectationForm{
+  &__label{
+    @include mixins.label-medium-text;
+  }
+  &__wrapper{
+  @include mixins.paddingY-sub-content-20px;
+    display: grid;
+    width: 60%;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-gap: 15px;
+    align-items: center;
+    &--input{
+      @include mixins.padding-input-resume;
+      @include mixins.border-input-resume;
+      height: 42px;
+      width: min-content;
+    ::placeholder{
+      @include mixins.input-placeholder-18px;
+
+    }
+    }
+  }
+}

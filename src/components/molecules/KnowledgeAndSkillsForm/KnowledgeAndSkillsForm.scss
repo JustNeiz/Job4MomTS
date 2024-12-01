@@ -1,3 +1,8 @@
+@use '/Users/justneiz/WebstormProjects/Job4MomTS/src/styles/mixins.scss' as mixins;
 .knowledgeAndSkillsForm{
+  @include mixins.paddingY-main-content-30px;
+  >*{
+@include mixins.paddingY-sub-content-10px;
+  }
 
 }

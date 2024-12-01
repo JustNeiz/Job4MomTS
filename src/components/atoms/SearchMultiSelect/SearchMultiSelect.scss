@@ -1,6 +1,9 @@
 @use "/Users/justneiz/WebstormProjects/Job4MomTS/src/styles/mixins.scss" as mixins;
 @use "/Users/justneiz/WebstormProjects/Job4MomTS/src/styles/variables.scss" as variables;
 .searchMultiSelect{
+  >*{
+    @include mixins.paddingY-sub-content-10px;
+  }
   &__wrapper{
   @include mixins.border-input-resume;
     @include mixins.size-input-resume;
@@ -15,5 +18,20 @@
   }
   &__pillList{
     height: 100%;
+    display: flex;
+    justify-content: space-between;
+  }
+  &__pill{
+    @include mixins.border-input-resume;
+    background-color: white;
+    width: min-content;
+    min-width: 150px;
+    height: 44px;
+    @include mixins.text-black-18px;
+    span{
+      height: 100%;
+      display: flex;
+      align-items: center;
+    }
   }
 }

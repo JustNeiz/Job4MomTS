@@ -1,3 +1,4 @@
+import "./InputWithLabel.scss";
 import { Field, useFormikContext } from "formik";
 import { ResumeFormValues } from "../../../interfaces/ResumeFormValues.ts";
 import React from "react";
@@ -14,13 +15,13 @@ const InputWithLabel: React.FC<IInputWithLabel> = ({
   const { errors, touched } = useFormikContext<ResumeFormValues>();
 
   return (
-    <div>
+    <div className={`inputWithLabel`}>
       <label className={labelClassName}>{children}</label>
       <Field
         name={name}
         type={type}
         placeholder={placeholder}
-        className={inputClassName}
+        className={`inputWithLabel__input ${inputClassName}`}
       />
       {errors.firstName && touched.firstName && <div>{errors.firstName}</div>}
     </div>

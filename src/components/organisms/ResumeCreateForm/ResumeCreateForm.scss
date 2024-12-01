@@ -2,7 +2,13 @@
 .resumeCreateForm {
   @include mixins.border-vacancy-card;
   padding: 30px;
+  position: relative;
   >*{
   width: 70%;
+  }
+  &__submit{
+    position: absolute;
+    right: 60px;
+    bottom: 40px;
   }
 }

@@ -85,8 +85,26 @@
   padding-top:  20px;
   padding-bottom:  20px;
 }
+
+@mixin paddingY-sub-content-15px{
+  padding-top:  15px;
+  padding-bottom:  15px;
+}
+
+@mixin paddingY-sub-content-10px{
+  padding-top:  10px;
+  padding-bottom:  10px;
+}
+
 @mixin padding-input-resume{
   padding: 17px 24px;
+}
+
+//,margins
+
+@mixin marginY-sub-content-20px{
+  margin-top:  20px;
+  margin-bottom:  20px;
 }
 
 //sizing

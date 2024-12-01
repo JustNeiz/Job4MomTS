@@ -1,0 +1,20 @@
+@use '/Users/justneiz/WebstormProjects/Job4MomTS/src/styles/mixins.scss' as mixins;
+.residenceSection{
+&__label{
+  @include mixins.label-medium-text;
+}
+  &__input{
+  @include mixins.border-input-resume;
+  @include mixins.padding-input-resume;
+  @include mixins.size-input-resume;
+    @include mixins.text-black-18px;
+    ::placeholder{
+
+  @include mixins.input-placeholder-18px;
+    }
+
+  }
+  &__wrapper{
+    @include mixins.paddingY-sub-content-20px;
+  }
+}

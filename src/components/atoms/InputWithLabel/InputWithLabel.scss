@@ -1,3 +1,18 @@
-.inputWithLabel{
+@use '/Users/justneiz/WebstormProjects/Job4MomTS/src/styles/mixins.scss' as mixins;
+@use '/Users/justneiz/WebstormProjects/Job4MomTS/src/styles/variables.scss' as variables;
 
+.inputWithLabel{
+  display: flex;
+  flex-direction: column;
+  &__input{
+
+  @include mixins.border-input-resume;
+  @include mixins.size-input-resume;
+  @include mixins.padding-input-resume;
+
+  font-size: 18px;
+  ::placeholder{
+    color: variables.$color-text-grey;
+  }
+  }
 }

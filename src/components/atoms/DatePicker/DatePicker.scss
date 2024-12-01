@@ -1,0 +1,29 @@
+@use '/Users/justneiz/WebstormProjects/Job4MomTS/src/styles/mixins.scss' as mixins;
+.datePicker{
+&__input{
+  &--month{
+  @include mixins.border-input-resume;
+  border-bottom-right-radius: 0;
+  border-top-right-radius: 0;
+    @include mixins.padding-input-resume;
+    height: 42px;
+    @include mixins.text-black-18px;
+    ::placeholder{
+
+      @include mixins.input-placeholder-18px;
+    }
+  }
+  &--year{
+  @include mixins.border-input-resume;
+    border-bottom-left-radius: 0;
+    border-top-left-radius: 0;
+    @include mixins.padding-input-resume;
+    height: 42px;
+    @include mixins.text-black-18px;
+    ::placeholder{
+
+    @include mixins.input-placeholder-18px;
+    }
+  }
+}
+}
